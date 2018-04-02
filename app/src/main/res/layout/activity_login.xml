@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/disclaimerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="Select the issues that matter to you:"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp" />
+
+    <CheckBox
+        android:id="@+id/Healthcare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Immigration"
+        android:layout_marginTop="20dp"
+        android:text="Healthcare"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/Immigration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ReligiousServices"
+        android:layout_marginTop="20dp"
+        android:text="Immigration"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/ReligiousServices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/DisabledCare"
+        android:layout_marginTop="20dp"
+        android:text="Religious Services"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/DisabledCare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ElderlyCare"
+        android:layout_marginTop="20dp"
+        android:text="Disabled Care"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/ElderlyCare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/PovertyPrevention"
+        android:layout_marginTop="20dp"
+        android:text="Elderly Care"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/PovertyPrevention"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/GeneralServices"
+        android:layout_marginTop="20dp"
+        android:text="Poverty Prevention"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/GeneralServices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/disclaimerTitle"
+        android:layout_marginTop="20dp"
+        android:text="General Services"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/Disease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Healthcare"
+        android:layout_alignBottom="@+id/Healthcare"
+        android:layout_alignStart="@+id/Abduction"
+        android:text="Disease"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/Abduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Immigration"
+        android:layout_alignBottom="@+id/Immigration"
+        android:layout_alignStart="@+id/Education"
+        android:text="Abduction"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/Education"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ReligiousServices"
+        android:layout_alignBottom="@+id/ReligiousServices"
+        android:layout_alignStart="@+id/Animals"
+        android:text="Education"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/Animals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/DisabledCare"
+        android:layout_alignBottom="@+id/DisabledCare"
+        android:layout_alignStart="@+id/Housing"
+        android:text="Animals"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/Housing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ElderlyCare"
+        android:layout_alignBottom="@+id/ElderlyCare"
+        android:layout_toEndOf="@+id/PovertyPrevention"
+        android:text="Housing"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/Food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/PovertyPrevention"
+        android:layout_alignBottom="@+id/PovertyPrevention"
+        android:layout_toEndOf="@+id/PovertyPrevention"
+        android:text="Food"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/Cancer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/GeneralServices"
+        android:layout_alignBottom="@+id/GeneralServices"
+        android:layout_toEndOf="@+id/PovertyPrevention"
+        android:text="Cancer"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/continueToDonationMethods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/disclaimerTitle"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:onClick="goToListing"
+        android:text="Continue"
+        android:textSize="22sp" />
+
+
+</RelativeLayout>
